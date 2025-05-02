@@ -21,6 +21,7 @@
   "type": "commonjs",
   "main": "src/index.js",
   "scripts": {
+    "beautify": "prettier --single-quote --trailing-comma all --write \"src/**/*.{js, json, scss, css, html}\"",
     "start": "nodemon --inspect src/index.js",
     "watch": "sass --watch src/resources/scss:src/public/css",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -28,11 +29,17 @@
   "dependencies": {
     "express": "^4.21.2",
     "express-handlebars": "^8.0.1",
+    "mongoose": "^8.14.0",
+    "mongoose-slug-generator": "^1.0.4",
+    "mongoose-slug-updater": "^3.3.0",
     "node": "^23.11.0"
   },
   "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.1",
     "morgan": "^1.10.0",
     "nodemon": "^3.1.9",
+    "prettier": "^3.5.3",
     "sass": "^1.86.3"
   }
 }
