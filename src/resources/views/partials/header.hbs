@@ -1,19 +1,34 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+<div class="container">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="/">F8edu</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/courses/create">Đăng khóa học</a>
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Sang
+            <img src="https://lh3.googleusercontent.com/fife/ALs6j_EtiT-qgmmyRVXFntfSoTBhxclqGEqe1G1mNAk16v5QKvorJKaCZKFqWnCdNXT6F5TvkSUlAbidb0JEsW4jv0bV-ii0Z_cBMGOysfdMWwLetzZa5nMogo5ax93wwk0v8CvJvJvG1iUAtUfKAIGCTfyeZ7kZOYn8QlCTiY_IKZRzMW-YeccS-NuyPBTkXYP5WiX70af88Dbfl7t3T_x5RhW6C5r1DFIm1k2tuR7cU9Fk9AkZ2B-76fktptfrIDurEfFbf6niAZLHTFdajNTJVi6mv8ynNfSjZqMtuD3LdWUhzUQdLTXfOXMVUo96vzMn7vfRziJGFqA7m5u6DJH5gLw5z9t9N7uzLsRlopDuDJhlIyxDuGrFqZqw9paLxDRGouOaQW371BBOXrdXN5c1dUSHHPDIQWyZFgf4gKs5uu0x91Z-Sfh8LNtIXOuscks2yu_kGDCqi1upmp2w3cpOSNH5206U9X56AKphgjdHBqHOdlZagu3zI7JA8vq3iybyu12A25LlL0n4cTuDQxVRJqvSFzlg6Gdk3winsdMCZ21xfVJ5VwIb6DQ8f0Z_HS5ntoQlQO8dWbOntUtkIPytAJZMv3CmKSRxouYLr1uHktZX7CGkXVlIESkVTn5BRNLUXwSMlrzwtfIJXf_HCeyYKQJh9j6TOiPaH_J1O7mHycYieWfPMTtq0JH4uU4yorRGMpppBFcxIOmYrFsKILQcPjSiiGue7rXJmHR3_402OWF801h07x7LSJC5MN36Kk49HGIIOnzMvp2KAv18N2jqZNCxuUcLt9fT_s0T5OMHIa2m_tBEme9QyWNbuDdHZTV4SVlWsYJiC8IHK3patPz47rWd7tuT5slsBk9-Jk53roDiWUH6aFsck4qKZOYcvmw4f9yw3VBrgUEkid1LjbFA4xLIbVWipKhsoyVbeGMRkkbCw2fY8wlhLKHsbdoi7ZlRRhZN0Zz8Q0Mb65OfwM4TuoxDbkbI8f7ujByAIDygQtZRipoUJU4ZLhAf4P3o6EMs41X8__J9zMZhxOqPEttaRuYKx_8RwhFeplKwSTRjryH9bP0RsCMD-L6DxcsQy06QVAixxgBw_GiPbQ_qoHt7lF6uqJzmAbRm-GNHeVAYFSy5tUCeptx73I5CXoEoXGF8ZXBXTUQFDd-_5AMyUVUJwQxQgzC8oHVSZYJOLik4KhJIyejQgxmxO7TcNvyoUuWtfVE3kCYJFujr6douBJyykfH51mA1GhHw2ZumMqkxevt3lNx6QNVrkKonlIvcEEuSzIgC9lutosEad98GJpHhxYknXGQtzH5x49d3YG52LIY_MGg7D_v54qe9zaUlxKCD3MJZlGZmdDN_dkiLLCKDMNG1V3GhK1nuk2V166ajeLzGn-6nX7nV0gw1ST46DPrmSvXqloOkLKxs6zXrffV-G0IDIY7Z9okt0rAFiOGEZ31h0sHDLPqcIV57T_8UcVaMgXe2zEzWauinlEbGxQFeQugHvb5AXqYsj9oauxHB2BIdKwQ=s64-c" class="rounded-circle" alt="Avatar" width="30" height="30">
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="/courses/create">Đăng khóa học</a></li>
+            <li><hr class="dropdown-divider"></li>
+
+            <li><a class="dropdown-item" href="/me/stored/courses">Khóa học của tôi</a></li>
+            <li><a class="dropdown-item" href="/me/stored/news">Bài đăng của tôi</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Đăng xuất</a></li>
+          </ul>
         </li>
       </ul>
-      
     </div>
   </div>
-</nav> 
+</nav>
+    </div>
+
+<!-- Include Bootstrap CSS and JS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
